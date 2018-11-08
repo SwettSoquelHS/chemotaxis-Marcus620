@@ -1,5 +1,5 @@
 Bacteria[] cell = new Bacteria[1];
-String s = "code now";
+//String s = "code now";
 //declare bacteria variables here   
 void setup()   
 {     
@@ -17,7 +17,7 @@ void draw()
 
 void mousePressed(){
   textSize(100);
-  text(s, 300, height/2);
+//  text(s, 300, height/2);
 //  background((int)(Math.random() * 255), (int)(Math.random() * 255), (int)(Math.random() * 255));
 // redraw(); 
 }
@@ -37,7 +37,8 @@ class Bacteria
   void show() {
     fill((int)(Math.random() * 255), (int)(Math.random() * 255), 
     (int)(Math.random() * 255));
-    ellipse(mouseX,mouseY,(int)(Math.random() * 200),50);
+    noLoop();
+    ellipse(x_pos,y_pos,20,20);
     
   }
   //lots of java!
