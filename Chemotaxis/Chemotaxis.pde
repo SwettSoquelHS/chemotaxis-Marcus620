@@ -4,6 +4,7 @@ Bacteria[] cell = new Bacteria[200];
 void setup()   
 {     
   size(900, 600);
+  smooth();
   background(60);
   for(int i = 0; i < cell.length; i++){
   cell[i] = new Bacteria(width/2, height/2);
@@ -14,6 +15,8 @@ void setup()
 void draw()   
 { 
   background(60);
+  fill(0,200,0);
+  ellipse(mouseX, mouseY, 25, 25);
   noLoop();
   for(int i = 0; i < cell.length; i++){
   cell[i].show();
